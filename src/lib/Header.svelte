@@ -38,18 +38,19 @@
         </a>
       </MegaMenu>
       <NavLi class="cursor-pointer">
-        文档中心<ChevronDownOutline class="w-3 h-3 ms-2 text-primary-800 dark:text-white inline" />
+        文档中心
       </NavLi>
-      <Dropdown class="w-44 z-20">
-        <DropdownItem href="/">文档</DropdownItem>
-        <DropdownItem href="/">客户案例</DropdownItem>
-        <DropdownItem href="/">Blog</DropdownItem>
-      </Dropdown>
+      <NavLi class="cursor-pointer">
+        客户案例
+      </NavLi>
+      <NavLi class="cursor-pointer">
+        Blog
+      </NavLi>
       <NavLi class="cursor-pointer">
         公司<ChevronDownOutline class="w-3 h-3 ms-2 text-primary-800 dark:text-white inline" />
       </NavLi>
       <Dropdown class="w-44 z-20">
-        <DropdownItem href="/">关于我们</DropdownItem>
+        <DropdownItem href="/company/team">关于我们</DropdownItem>
         <DropdownItem href="/">合作伙伴</DropdownItem>
         <DropdownItem href="/">最近新闻</DropdownItem>
         <DropdownItem href="/">联系我们</DropdownItem>

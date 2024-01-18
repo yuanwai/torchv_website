@@ -16,22 +16,20 @@
         <svelte:fragment slot="icon"><ChartSolid class="text-primary-600 dark:text-primary-300"/></svelte:fragment>
         <svelte:fragment slot="h3">开箱即用</svelte:fragment>
         <svelte:fragment slot="paragraph">
-          Plan it, create it, launch it. Collaborate seamlessly with all
-          the organization and hit your marketing goals every month with our
-          marketing plan.
+          <p class="pr-6">
+          TorchV RAG 为您提供开箱即用服务。只需开通服务，无需专业培训，即可在几分钟内轻松完成生产级咨询服务机器人（Bot）搭建.
+        </p>
         </svelte:fragment>
       </FeatureItem>
       <FeatureItem>
-        <svelte:fragment slot="icon"
-          ><LandmarkSolid
-            class="text-primary-600 dark:text-primary-300"
-          /></svelte:fragment
-        >
-        <svelte:fragment slot="h3">易上手</svelte:fragment>
-        <svelte:fragment slot="paragraph"
-          >Protect your organization, devices and stay compliant with our
-          structured workflows and custom permissions made for you.</svelte:fragment
-        >
+        <svelte:fragment slot="icon"><LandmarkSolid
+            class="text-primary-600 dark:text-primary-300"/></svelte:fragment>
+        <svelte:fragment slot="h3">高精准度</svelte:fragment>
+        <svelte:fragment slot="paragraph">
+          <p class="pr-6">
+          TorchV 采用自研RAG架构，在各个环节进行优化提升，配合自研的幂等分类器、执行器、重排序等，让RAG意图理解能力、召回准确度极大提升。
+          </p>
+        </svelte:fragment>
       </FeatureItem>
       <FeatureItem>
         <svelte:fragment slot="icon"
@@ -39,10 +37,9 @@
             class="text-primary-600 dark:text-primary-300"
           /></svelte:fragment
         >
-        <svelte:fragment slot="h3">高准确率</svelte:fragment>
-        <svelte:fragment slot="paragraph"
-          >Auto-assign tasks, send Slack messages, and much more. Now power
-          up with hundreds of new templates to help you get started.</svelte:fragment
+        <svelte:fragment slot="h3">轻松扩展“+AI”</svelte:fragment>
+        <svelte:fragment slot="paragraph">
+          <p class="pr-6">我们提供高效扩展API和技术手册，可被您的原有应用集成，轻松将您的应用扩展成“+AI”。</p></svelte:fragment
         >
       </FeatureItem>
       <FeatureItem>
@@ -52,34 +49,26 @@
           /></svelte:fragment
         >
         <svelte:fragment slot="h3">访问权限可控</svelte:fragment>
-        <svelte:fragment slot="paragraph"
-          >Audit-proof software built for critical financial operations like
-          month-end close and quarterly budgeting.</svelte:fragment
-        >
+        <svelte:fragment slot="paragraph"><p class="pr-6">
+          可对知识内容进行访问权限控制，让敏感仅对指定人员开放，以保护您的企业数据安全。</p>
+        </svelte:fragment>
       </FeatureItem>
       <FeatureItem>
         <svelte:fragment slot="icon"
           ><RocketSolid
-            class="text-primary-600 dark:text-primary-300"
-          /></svelte:fragment
-        >
+            class="text-primary-600 dark:text-primary-300"/></svelte:fragment>
         <svelte:fragment slot="h3">支持全量本地化部署</svelte:fragment>
-        <svelte:fragment slot="paragraph"
-          >Craft beautiful, delightful experiences for both marketing and
-          product with real cross-company collaboration.</svelte:fragment
-        >
+        <svelte:fragment slot="paragraph"><p class="pr-6">
+          我们提倡SaaS订阅，但依然提供全量本地化部署，包括大语言模型、RAG和应用，满足政府和特定企业的安全要求。</p>
+          </svelte:fragment>
       </FeatureItem>
       <FeatureItem>
-        <svelte:fragment slot="icon"
-          ><CogOutline
-            class="text-primary-600 dark:text-primary-300"
-          /></svelte:fragment
-        >
+        <svelte:fragment slot="icon"><CogOutline
+            class="text-primary-600 dark:text-primary-300"/></svelte:fragment>
         <svelte:fragment slot="h3">配置灵活</svelte:fragment>
-        <svelte:fragment slot="paragraph"
-          >Keep your company’s lights on with customizable, iterative, and
-          structured workflows built for all efficient teams and individual.</svelte:fragment
-        >
+        <svelte:fragment slot="paragraph"><p class="pr-6">
+          TorchV RAG提供丰富的配置操作界面，使用者可在实际使用中调整各类参数来适配业务场景。主要参数包括语义和关键词检索权重，是否让LLM兜底回复等。</p>
+          </svelte:fragment>
       </FeatureItem>
     </FeatureDefault>
   </Section>
