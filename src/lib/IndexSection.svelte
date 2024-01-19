@@ -16,7 +16,7 @@
         <svelte:fragment slot="paragraph">使用TorchV
           RAG，帮助您快速建立问答式业务应用。超强的语义理解能力，与传统智能问答技术相比，不再需要繁琐的知识库人工维护。</svelte:fragment>
         <a href="/docs/getting"
-          ><Button size="xl" color="red" class="inline-flex items-center justify-center mr-3">现在就了解<ArrowRightSolid size="md" class="ml-2 -mr-1"/></Button></a>
+          ><Button size="xl" color="red" class="inline-flex items-center justify-center mr-3">现在了解<ArrowRightSolid size="md" class="ml-2 -mr-1"/></Button></a>
         <a href="/try"><Button color="light" size="xl" class="inline-flex items-center justify-center">我要试用</Button></a>
       </HeroHeader>
     </div>

@@ -7,9 +7,7 @@
 </script>
 
 <Section name="faq" sectionClass="my-16">
-    <h2
-      class="mb-8 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
-    >
+    <h2 class="mb-8 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
       常见问题
     </h2>
     <Faq>

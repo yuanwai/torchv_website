@@ -14,27 +14,33 @@
           alt="Flowbite Logo"
         />
       </div>
-      <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-5">
+      <div class="grid grid-cols-3 gap-8 sm:gap-6 sm:grid-cols-5">
         <div>
-          <h2
-            class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
-          >
-            资源中心
+          <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+            产品
           </h2>
           <FooterLinkGroup>
-            <FooterLink liClass="mb-4" href="/">产品文档</FooterLink>
-            <FooterLink liClass="mb-4" href="/">快速上手</FooterLink>
-            <FooterLink liClass="mb-4" href="/">技术Blog</FooterLink>
+            <FooterLink liClass="mb-4" href="/"> Bot</FooterLink>
+            <FooterLink liClass="mb-4" href="/"> Assistant</FooterLink>
           </FooterLinkGroup>
         </div>
         <div>
-          <h2
-            class="mb-6 text-sm font-semibold uppercase text-gray-900 dark:text-white"
-          >
+          <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+            文档中心
+          </h2>
+          <FooterLinkGroup>
+            <FooterLink liClass="mb-4" href="/">快速上手</FooterLink>
+            <FooterLink liClass="mb-4" href="/">产品文档</FooterLink>
+            <FooterLink liClass="mb-4" href="/">Blog</FooterLink>
+          </FooterLinkGroup>
+        </div>
+        <div>
+          <h2 class="mb-6 text-sm font-semibold uppercase text-gray-900 dark:text-white">
             联系我们
           </h2>
           <FooterLinkGroup>
             <FooterLink liClass="mb-4" href="/">关于我们</FooterLink>
+            <FooterLink liClass="mb-4" href="/">最近新闻</FooterLink>
             <FooterLink liClass="mb-4" href="/">联系方式</FooterLink>
           </FooterLinkGroup>
         </div>

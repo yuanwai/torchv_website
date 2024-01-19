@@ -2,7 +2,7 @@
     import { ArrowRightSolid } from "flowbite-svelte-icons";
     import { Section, Cta } from "flowbite-svelte-blocks";
 </script>
-<Section name="ctawithimg">
+<Section name="ctawithimg" sectionClass="my-20">
     <Cta ctatype="image">
       <svelte:fragment slot="img">
         <img class="w-full dark:hidden shadow-xl dark:shadow-gray-800" src="/images/try.png" alt="dashboard" />

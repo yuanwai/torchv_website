@@ -9,6 +9,8 @@
   import IndexSection from "$lib/IndexSection.svelte";
   import Mission from "$lib/Mission.svelte";
   import ShowCast from "$lib/ShowCast.svelte";
+  import Partner from "$lib/Partner.svelte";
+    import { Hr } from "flowbite-svelte";
 </script>
 
 <div class="flex flex-col space-y-2 pb-10">
@@ -19,15 +21,18 @@
       <!-- 首屏 -->
       <IndexSection />
       <!-- 客户展示 -->
-      <Customers />
-      <!-- 使命 -->
-      <Mission />
+      <!-- <Customers /> -->
+      
       <!-- 特性 -->
       <Features />
+      <Hr/>
+      <Partner/>
       <!-- 快照和试用 -->
       <ShowCast />
       <!-- 价格 -->
       <Pricing />
+      <!-- 使命 -->
+      <Mission />
       <!-- FAQ -->
       <Faq />
       <!-- 页脚 -->
