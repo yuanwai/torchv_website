@@ -7,7 +7,7 @@
     } from "flowbite-svelte-blocks";
 </script>
 
-<Section name="heroVisual" class="grid grid-cols-1 lg:grid-cols-12">
+<Section name="heroVisual" class="grid grid-cols-1 lg:grid-cols-12 bg-yellow-200">
     <div class="mr-auto place-self-center lg:col-span-7">
       <HeroHeader
         h1Class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white"

@@ -3,7 +3,7 @@
     import { ChartSolid, LandmarkSolid, BriefcaseSolid,DollarSolid, RocketSolid,CogOutline } from "flowbite-svelte-icons";
 </script>
 
-<Section name="feature" sectionClass="my-32">
+<Section name="feature" sectionClass="py-32  bg-slate-100">
     <HeroHeader
       class="max-w-screen-md mb-8 lg:mb-16"
       h2Class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"

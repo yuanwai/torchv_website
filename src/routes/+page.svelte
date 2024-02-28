@@ -10,7 +10,8 @@
   import Mission from "$lib/Mission.svelte";
   import ShowCast from "$lib/ShowCast.svelte";
   import Partner from "$lib/Partner.svelte";
-    import { Hr } from "flowbite-svelte";
+  import Video from "$lib/Video.svelte";
+  import { Hr } from "flowbite-svelte";
 </script>
 
 <div class="flex flex-col space-y-2 pb-10">
@@ -20,15 +21,17 @@
       <div class="h-32"></div>
       <!-- 首屏 -->
       <IndexSection />
+      <!-- 视频 -->
+      <Video/>
       <!-- 客户展示 -->
       <!-- <Customers /> -->
-      
       <!-- 特性 -->
       <Features />
-      <Hr/>
+   
       <Partner/>
       <!-- 快照和试用 -->
       <ShowCast />
+      <Hr/>
       <!-- 价格 -->
       <Pricing />
       <!-- 使命 -->
