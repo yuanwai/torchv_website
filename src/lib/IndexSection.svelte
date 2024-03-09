@@ -12,9 +12,9 @@
       <HeroHeader
         h1Class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white"
         pClass="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
-        <svelte:fragment slot="h1">使用RAG构建问答式业务</svelte:fragment>
+        <svelte:fragment slot="h1"><p>使用RAG</p><p>与非结构化数据建立对话</p></svelte:fragment>
         <svelte:fragment slot="paragraph">使用TorchV
-          RAG，帮助您快速建立问答式业务应用。超强的语义理解能力，与传统智能问答技术相比，不再需要繁琐的知识库人工维护。</svelte:fragment>
+          Bot，帮助您快速与各类型文档、图片、音频建立问答式业务。基于大语言模型（LLM）和 检索增强生成（RAG）的能力，无需繁琐人工维护，即可建立强劲服务。</svelte:fragment>
         <a href="/docs/getting"
           ><Button size="xl" color="red" class="inline-flex items-center justify-center mr-3">现在了解<ArrowRightSolid size="md" class="ml-2 -mr-1"/></Button></a>
         <a href="/try"><Button color="light" size="xl" class="inline-flex items-center justify-center">我要试用</Button></a>

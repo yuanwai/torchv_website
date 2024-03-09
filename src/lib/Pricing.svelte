@@ -14,12 +14,12 @@ import { CheckCircleSolid } from "flowbite-svelte-icons";
       class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0 mx-32">
       <PricingCard>
         <PricingBodyHead>
-          <svelte:fragment slot="h3">基础版</svelte:fragment>
+          <svelte:fragment slot="h3">试用版</svelte:fragment>
           <svelte:fragment slot="paragraph"
-            >非常适合小团队内部使用。</svelte:fragment>
+            >仅供测试使用。</svelte:fragment>
           <svelte:fragment slot="price">
-            <span class="mr-2 text-5xl font-extrabold">￥19,800</span>
-            <span class="text-gray-500 dark:text-gray-400">/年</span>
+            <span class="mr-2 text-5xl font-extrabold">免费</span>
+            <span class="text-gray-500 dark:text-gray-400"></span>
           </svelte:fragment>
         </PricingBodyHead>
         <PricingItemWrapper>
@@ -28,26 +28,28 @@ import { CheckCircleSolid } from "flowbite-svelte-icons";
               <CheckCircleSolid
                 class="w-4 h-4 text-primary-600 dark:text-primary-500"/>
               <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">
-                每分钟请求数（QPM）：20
+                每分钟请求数（QPM）：10
               </span>
             </li>
             <li class="flex space-x-2 rtl:space-x-reverse">
               <CheckCircleSolid
                 class="w-4 h-4 text-primary-600 dark:text-primary-500"
               />
-              <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">200MB文件存储容量</span>
+              <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">50MB文件上传流量</span>
             </li>
             <li class="flex space-x-2 rtl:space-x-reverse">
               <CheckCircleSolid
                 class="w-4 h-4 text-primary-600 dark:text-primary-500"/>
               <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">
-                2000万tokens
+                赠送 ￥10 模型用量代金券
               </span>
             </li>
             <li class="flex space-x-2 rtl:space-x-reverse">
               <CheckCircleSolid
-                class="w-4 h-4 text-primary-600 dark:text-gray-500"/>
-              <span class="text-base font-normal leading-tight text-gray-500">微信小程序、H5</span>
+                class="w-4 h-4 text-primary-600 dark:text-primary-500"/>
+              <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">
+                知识库最大数量：2
+              </span>
             </li>
             <li
               class="flex space-x-2 rtl:space-x-reverse line-through dark:text-primary-500">
@@ -64,17 +66,17 @@ import { CheckCircleSolid } from "flowbite-svelte-icons";
                 class="text-base font-normal leading-tight text-gray-500">检索内容权限分级</span>
             </li>
           </ul>
-          <Button class="w-full">立即开通</Button>
+          <Button class="w-full">立即试用</Button>
         </PricingItemWrapper>
       </PricingCard>
 
       <PricingCard>
         <PricingBodyHead>
           <svelte:fragment slot="h3">标准版</svelte:fragment>
-          <svelte:fragment slot="paragraph">非常适合企业/机构内部使用。</svelte:fragment>
+          <svelte:fragment slot="paragraph">适合企业/机构 内部使用。</svelte:fragment>
 
           <svelte:fragment slot="price">
-            <span class="mr-2 text-5xl font-extrabold">￥36,800</span>
+            <span class="mr-2 text-5xl font-extrabold">￥36,000</span>
             <span class="text-gray-500 dark:text-gray-400">/年</span>
           </svelte:fragment>
         </PricingBodyHead>
@@ -85,7 +87,7 @@ import { CheckCircleSolid } from "flowbite-svelte-icons";
               <CheckCircleSolid
                 class="w-4 h-4 text-primary-600 dark:text-primary-500"/>
               <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">
-                每分钟请求数（QPM）：50
+                每分钟请求数（QPM）：40
               </span>
             </li>
             <li class="flex space-x-2 rtl:space-x-reverse">
@@ -94,7 +96,7 @@ import { CheckCircleSolid } from "flowbite-svelte-icons";
               <span
                 class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400"
               >
-                800MB文件存储容量
+                800MB文件上传流量
               </span>
             </li>
             <li class="flex space-x-2 rtl:space-x-reverse">
@@ -104,7 +106,7 @@ import { CheckCircleSolid } from "flowbite-svelte-icons";
               <span
                 class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400"
               >
-                5000万tokens
+                赠送 ￥6,000 模型用量代金券
               </span>
             </li>
             <li
@@ -115,7 +117,7 @@ import { CheckCircleSolid } from "flowbite-svelte-icons";
               />
               <span
                 class="text-base font-normal leading-tight text-gray-500"
-                >微信小程序、H5</span
+                >知识库最大数量：6</span
               >
             </li>
             <li
@@ -148,7 +150,7 @@ import { CheckCircleSolid } from "flowbite-svelte-icons";
         <PricingBodyHead>
           <svelte:fragment slot="h3">专业版</svelte:fragment>
           <svelte:fragment slot="paragraph"
-            >适合企业/机构对外服务.</svelte:fragment
+            >适合企业/机构 对外服务。</svelte:fragment
           >
           <svelte:fragment slot="price">
             <span class="mr-2 text-5xl font-extrabold">￥98,000</span>
@@ -165,7 +167,7 @@ import { CheckCircleSolid } from "flowbite-svelte-icons";
               <span
                 class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400"
               >
-              每分钟请求数（QPM）：120
+              每分钟请求数（QPM）：90
               </span>
             </li>
             <li class="flex space-x-2 rtl:space-x-reverse">
@@ -175,7 +177,7 @@ import { CheckCircleSolid } from "flowbite-svelte-icons";
               <span
                 class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400"
               >
-                2GB文件存储容量
+                2GB文件上传流量
               </span>
             </li>
             <li
@@ -186,7 +188,7 @@ import { CheckCircleSolid } from "flowbite-svelte-icons";
               />
               <span
                 class="text-base font-normal leading-tight text-gray-500"
-                >2亿tokens</span
+                >赠送 ￥18,000 模型用量代金券</span
               >
             </li>
             <li class="flex space-x-2 rtl:space-x-reverse">
@@ -196,7 +198,7 @@ import { CheckCircleSolid } from "flowbite-svelte-icons";
               <span
                 class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400"
               >
-                微信小程序、H5、APP
+              知识库最大数量：15
               </span>
             </li>
             <li
