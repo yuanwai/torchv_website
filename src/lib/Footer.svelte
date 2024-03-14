@@ -21,7 +21,6 @@
           </h2>
           <FooterLinkGroup>
             <FooterLink liClass="mb-4" href="/"> Bot</FooterLink>
-            <FooterLink liClass="mb-4" href="/"> Assistant</FooterLink>
           </FooterLinkGroup>
         </div>
         <div>
@@ -29,9 +28,9 @@
             文档中心
           </h2>
           <FooterLinkGroup>
-            <FooterLink liClass="mb-4" href="/">快速上手</FooterLink>
-            <FooterLink liClass="mb-4" href="/">产品文档</FooterLink>
-            <FooterLink liClass="mb-4" href="/">Blog</FooterLink>
+            <FooterLink liClass="mb-4" href="/docs/manual">快速上手</FooterLink>
+            <FooterLink liClass="mb-4" href="/docs/dev">API文档</FooterLink>
+            <FooterLink liClass="mb-4" href="/docs/whattorchvbot">TorchV Bot简介</FooterLink>
           </FooterLinkGroup>
         </div>
         <div>
@@ -39,9 +38,7 @@
             联系我们
           </h2>
           <FooterLinkGroup>
-            <FooterLink liClass="mb-4" href="/">关于我们</FooterLink>
-            <FooterLink liClass="mb-4" href="/">最近新闻</FooterLink>
-            <FooterLink liClass="mb-4" href="/">联系方式</FooterLink>
+            <FooterLink liClass="mb-4" href="/company/team">关于我们</FooterLink>
           </FooterLinkGroup>
         </div>
       </div>

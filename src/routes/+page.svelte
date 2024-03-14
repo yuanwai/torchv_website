@@ -17,8 +17,8 @@
 <div class="flex flex-col space-y-2 pb-10">
   <div class="relative px-8">
     <Header />
-    <div style="height: 100%;" class="overflow-scroll pb-16">
-      <div class="h-32"></div>
+    <div style="height: 100%;" class="pb-16">
+      <div class="h-32 "></div>
       <!-- 首屏 -->
       <IndexSection />
       <!-- 视频 -->
@@ -37,7 +37,7 @@
       <!-- 使命 -->
       <Mission />
       <!-- FAQ -->
-      <Faq />
+      <!-- <Faq /> -->
       <!-- 页脚 -->
       <Footer />
     </div>

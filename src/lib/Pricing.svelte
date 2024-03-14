@@ -1,7 +1,8 @@
 <script>
-import { Button } from "flowbite-svelte";
+import { Button, Modal} from "flowbite-svelte";
 import { Section, PricingBodyHead, PricingCard, PricingItemWrapper, PricingHead } from "flowbite-svelte-blocks";
 import { CheckCircleSolid } from "flowbite-svelte-icons";
+let defaultModal = false;
 </script>
 
 <Section name="pricing" sectionClass="my-16">
@@ -56,6 +57,13 @@ import { CheckCircleSolid } from "flowbite-svelte-icons";
               <CheckCircleSolid
                 class="w-4 h-4 text-gray-400 dark:text-gray-500"/>
               <span
+                class="text-base font-normal leading-tight text-gray-500">一键嵌入Web端</span>
+            </li>
+            <li
+              class="flex space-x-2 rtl:space-x-reverse line-through dark:text-primary-500">
+              <CheckCircleSolid
+                class="w-4 h-4 text-gray-400 dark:text-gray-500"/>
+              <span
                 class="text-base font-normal leading-tight text-gray-500">API访问</span>
             </li>
             <li
@@ -65,14 +73,21 @@ import { CheckCircleSolid } from "flowbite-svelte-icons";
               <span
                 class="text-base font-normal leading-tight text-gray-500">检索内容权限分级</span>
             </li>
+            <li
+              class="flex space-x-2 rtl:space-x-reverse line-through decoration-gray-500">
+              <CheckCircleSolid
+                class="w-4 h-4 text-gray-400 dark:text-gray-500"/>
+              <span
+                class="text-base font-normal leading-tight text-gray-500">智能洞察分析系统</span>
+            </li>
           </ul>
-          <Button class="w-full">立即试用</Button>
+          <Button on:click={() => (defaultModal = true)} class="w-full">立即试用</Button>
         </PricingItemWrapper>
       </PricingCard>
 
       <PricingCard>
         <PricingBodyHead>
-          <svelte:fragment slot="h3">标准版</svelte:fragment>
+          <svelte:fragment slot="h3">专业版</svelte:fragment>
           <svelte:fragment slot="paragraph">适合企业/机构 内部使用。</svelte:fragment>
 
           <svelte:fragment slot="price">
@@ -128,6 +143,17 @@ import { CheckCircleSolid } from "flowbite-svelte-icons";
               />
               <span
                 class="text-base font-normal leading-tight text-gray-500"
+                >一键嵌入Web端</span
+              >
+            </li>
+            <li
+              class="flex space-x-2 rtl:space-x-reverse decoration-gray-500"
+            >
+              <CheckCircleSolid
+                class="w-4 h-4 text-primary-600 dark:text-gray-500"
+              />
+              <span
+                class="text-base font-normal leading-tight text-gray-500"
                 >API访问</span
               >
             </li>
@@ -141,14 +167,21 @@ import { CheckCircleSolid } from "flowbite-svelte-icons";
                 class="text-base font-normal leading-tight text-gray-500">检索内容权限分级</span
               >
             </li>
+            <li
+              class="flex space-x-2 rtl:space-x-reverse line-through decoration-gray-500">
+              <CheckCircleSolid
+                class="w-4 h-4 text-gray-400 dark:text-gray-500"/>
+              <span
+                class="text-base font-normal leading-tight text-gray-500">智能洞察分析系统</span>
+            </li>
           </ul>
-          <Button class="w-full">立即开通</Button>
+          <Button on:click={() => (defaultModal = true)} class="w-full">联系我们</Button>
         </PricingItemWrapper>
       </PricingCard>
 
       <PricingCard>
         <PricingBodyHead>
-          <svelte:fragment slot="h3">专业版</svelte:fragment>
+          <svelte:fragment slot="h3">企业版</svelte:fragment>
           <svelte:fragment slot="paragraph"
             >适合企业/机构 对外服务。</svelte:fragment
           >
@@ -209,6 +242,17 @@ import { CheckCircleSolid } from "flowbite-svelte-icons";
               />
               <span
                 class="text-base font-normal leading-tight text-gray-500"
+                >一键嵌入Web端</span
+              >
+            </li>
+            <li
+              class="flex space-x-2 rtl:space-x-reverse decoration-gray-500"
+            >
+              <CheckCircleSolid
+                class="w-4 h-4 text-primary-600 dark:text-gray-500"
+              />
+              <span
+                class="text-base font-normal leading-tight text-gray-500"
                 >API访问</span
               >
             </li>
@@ -222,9 +266,33 @@ import { CheckCircleSolid } from "flowbite-svelte-icons";
                 class="text-base font-normal leading-tight text-gray-500">检索内容权限分级</span
               >
             </li>
+            <li
+              class="flex space-x-2 rtl:space-x-reverse decoration-gray-500"
+            >
+              <CheckCircleSolid
+                class="w-4 h-4 text-primary-600 dark:text-gray-500"
+              />
+              <span
+                class="text-base font-normal leading-tight text-gray-500">智能洞察分析系统</span
+              >
+            </li>
           </ul>
-          <Button class="w-full">立即开通</Button>
+          <Button on:click={() => (defaultModal = true)} class="w-full">联系我们</Button>
         </PricingItemWrapper>
       </PricingCard>
     </div>
+    <Modal title="" bind:open={defaultModal} autoclose size="sm">
+      <div class="flex justify-between mb-4 rounded-t sm:mb-5">
+        <div class="text-lg text-gray-900 md:text-xl dark:text-white">
+          <h3 class="font-semibold">您可以扫描下面的微信二维码进行咨询</h3>  
+        </div>
+      </div>
+      <!-- svelte-ignore a11y-missing-attribute -->
+      <img src="/images/yuanwai.jpg"/>
+      <div class="flex justify-between items-center">
+        <Button color="red">
+          关闭
+        </Button>
+      </div>
+    </Modal>
   </Section>

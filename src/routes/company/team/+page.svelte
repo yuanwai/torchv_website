@@ -87,5 +87,25 @@
         </TeamBody>
       </TeamWrapper>
     </Section>
+
+    <Section name="contentwithimg" sectionClass="my-16">
+      <ContentWithImage>
+        <svelte:fragment slot="h2">联系我们</svelte:fragment
+        >
+        <p class="mb-6 mr-9">
+          地址：浙江省杭州市拱墅区万融城1幢1409室
+        </p>
+        <p class="mb-6 mr-9">邮编：310016</p>
+        <p class="mb-6 mr-9">微信：lxdhdgss</p>
+        <svelte:fragment slot="image">
+          <img
+            class="w-full rounded-lg"
+            src="/images/team/hkt.png"
+            alt="office content 1"
+          />
+        </svelte:fragment>
+      </ContentWithImage>
+    </Section>
+
     <Footer/>
     </div>

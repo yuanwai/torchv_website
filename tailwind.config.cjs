@@ -4,11 +4,55 @@ const config = {
 
   darkMode: 'class',
   plugins: [
+    require('@tailwindcss/typography'),
     require('flowbite/plugin')
   ],
   
   theme: {
     extend: {
+      typography: {
+        DEFAULT: {
+          css: {
+            code: {
+              '&::before': {
+                content: 'none !important'
+              },
+              '&::after': {
+                content: 'none !important',
+              },
+              background: '#eee',
+            },
+
+            p: {
+              '&::before': {
+                content: 'none !important'
+              },
+              '&::after': {
+                content: 'none !important'
+              },
+            },
+
+            blockquote: {
+              background: '#f7f8f9',
+            },
+
+            ul: {
+              background: '#faf9f9',
+            },
+
+            table: {
+              thead: {
+                th: {
+                  background: '#eeeeee',
+                }
+              }
+            },
+          },
+          prose: {
+            maxWidth: '180ch',
+          },
+        }
+      },
       colors: {
         // flowbite-svelte
         primary: {
@@ -23,6 +67,10 @@ const config = {
           800: '#CC4522',
           900: '#A5371B'
         }
+      },
+      height: {
+        '128': '32rem',
+        '196': '56rem',
       }
     },
   },
